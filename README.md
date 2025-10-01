@@ -1,6 +1,6 @@
 # Anti-Corruption Layer (ACL) 
 
-Short, optimized demo of a self-service ACL in front of PostgreSQL. No Helm. Includes:
+This is a demo of a self-service ACL in front of PostgreSQL. Includes:
 - Minimal Flask API that reads Config-as-Code (YAML) and exposes REST endpoints.
 - Kustomize-only Kubernetes manifests.
 - Local GitOps/CI monitor that watches commits on `main` and reconciles the cluster.
@@ -78,17 +78,6 @@ git init && git add -A && git commit -m "initial" && git branch -M main
 ./scripts/monitor-main.sh
 ```
 
-## Stop Delete Cluster
-
-
-Delete (clean slate):
-```bash
-kind delete cluster --name acl-kind
-docker rm -f kind-registry || true
-```
-
-
 
 License: MIT
-# auros-acl-demo
-# auros-acl-demo
+
