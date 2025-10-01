@@ -1,4 +1,4 @@
-# Anti-Corruption Layer (ACL) – Minimal GitOps Demo (Flask + Kustomize)
+# Anti-Corruption Layer (ACL) 
 
 Short, optimized demo of a self-service ACL in front of PostgreSQL. No Helm. Includes:
 - Minimal Flask API that reads Config-as-Code (YAML) and exposes REST endpoints.
